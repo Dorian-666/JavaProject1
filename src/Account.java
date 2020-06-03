@@ -5,7 +5,7 @@ public class Account {
 
     Scanner scan1 = new Scanner(System.in);
 
-    private HashMap<String, String> accounts=  new HashMap<String, String>();
+    private HashMap<String, String> accounts=  new HashMap <String, String>();
     {
         accounts.put("SuperMario","1234");
         accounts.put("Andrew","4321");
@@ -28,15 +28,37 @@ public class Account {
             System.out.print("Enter Password:");
             String password =  scan1.nextLine();
 
-            boolean resultLogin = getAccounts().containsKey(login);
-            boolean resultPassword = getAccounts().containsValue(password);
-            if ((resultLogin == true) && (resultPassword == true )) {
 
-                System.out.println("System is loading...");;
+            if ((login.equals("SuperMario")) && (password.equals("1234") )) {
+
+                System.out.println("System is loading...");
                 break;
 
 
             }
+            else if ((login.equals("Andrew")) && (password.equals("4321") )) {
+
+                System.out.println("System is loading...");
+                break;
+
+
+            }
+            else if ((login.equals("Tobey2001")) && (password.equals("abc123") )) {
+
+                System.out.println("System is loading...");
+                break;
+
+
+            }
+            else if ((login.equals("Valiya")) && (password.equals("1881") )) {
+
+                System.out.println("System is loading...");
+                break;
+
+
+            }
+
+
             else{
 
                 System.out.println("Please, enter correct login or password!");

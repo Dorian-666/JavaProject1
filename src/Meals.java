@@ -147,9 +147,10 @@ public class Meals extends Cost {
 
             boolean resultMeal = getMeat().containsKey(inputMeat);
 
+
             if (resultMeal == true) {
 
-                this.getVegetable().remove(inputMeat);
+                this.getMeat().remove(inputMeat);
                 break;
 
             } else {
